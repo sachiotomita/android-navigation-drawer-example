@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+
 
     <TextView
         android:id="@+id/textView"
@@ -9,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Menu 1"
+        android:text="Welcome to Home"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-</RelativeLayout>
+</LinearLayout>

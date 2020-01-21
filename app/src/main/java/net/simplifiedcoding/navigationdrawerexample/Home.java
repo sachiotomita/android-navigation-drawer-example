@@ -3,26 +3,23 @@ package net.simplifiedcoding.navigationdrawerexample;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Belal on 18/09/16.
+ * Created by sat on 1/21/20.
  */
+public class Home extends Fragment {
 
-
-public class Menu1 extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //returning our layout file
         //change R.layout.yourlayoutfilename for each of your fragments
-        return inflater.inflate(R.layout.fragment_menu_1, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
 
@@ -30,17 +27,8 @@ public class Menu1 extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
-//        getActivity().setTitle("Menu 1");
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setSubtitle("1");
-
-//        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
-//        AppCompatActivity activity = (AppCompatActivity) getActivity();
-//        activity.setSupportActionBar(toolbar);
-
-//        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
-//        actionBar.setDisplayHomeAsUpEnabled(true);
-//        actionBar.setDisplayShowHomeEnabled(true);
-//        actionBar.setHomeButtonEnabled(true);
+//        getActivity().setTitle("Home");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setSubtitle("Home");
 
     }
 }
